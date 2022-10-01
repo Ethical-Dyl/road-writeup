@@ -116,9 +116,13 @@ After using the " " command I was able to uncover a username and password:
 
 Testing this with SSH it proved to provide another foothold into the server!
 
+<img width="469" alt="image" src="https://user-images.githubusercontent.com/66540055/193392396-c7e1f2d7-6848-43c0-8264-ed424ebf8d3f.png">
 
 
+# Final... uh Final Thoughts
 
+This was a very cool room for me personally as I have never used MongoDB so researching the syntax to use was enlightening and humbling! 
 
+Looking forward to doing more CTF's, if you have any reccomendations please let me know!
 
 
