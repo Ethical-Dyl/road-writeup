@@ -18,17 +18,17 @@ Opening the webpage I see that the webserver is hosting a web app. Initially goi
 <img width="952" alt="image" src="https://user-images.githubusercontent.com/66540055/193384463-25dd6e14-98f9-418a-888f-949ce9508da0.png">
 
 
-I see that we can register as a user, after successfully registering a new account I navigated to the profile page and seeing that the programming language is php I looked to create a reverse shell and upload it via the profile picture. As I get to the section to upload a profile picture I notice something very perculiar, only an admin may upload a profile picture and a critical oversight, the admin account has been listed!
+I see that I can register as a user, after successfully registering a new account I navigated to the profile page and seeing that the programming language is php I looked to create a reverse shell and upload it via the profile picture. As I get to the section to upload a profile picture I notice something very perculiar, only an admin may upload a profile picture and a critical oversight, the admin account has been listed!
 
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/66540055/193385290-36a4c5cf-a7aa-4ccc-ba29-fbd3bf47352d.png">
 
 
-After doing some exploring through the site I see that there is a 'ResetUser' funciton, my first thought is great let's open up BurpSuite and see if we can tamper with some parameters! After firing BurpSuite up and enabling my proxy I enter in a password and see what data is being transmitted:
+After doing some exploring through the site I see that there is a 'ResetUser' funciton, my first thought is great let's open up BurpSuite and see if I can tamper with some parameters! After firing BurpSuite up and enabling my proxy I enter in a password and see what data is being transmitted:
 
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/66540055/193385658-c8099cba-d0b2-427b-9486-1d897e91459b.png">
 
 
-Looking at the data we see that a username and the new password is being sent over, I attempted to change the username to the admin account that I found earlier in the profile seciton.
+Looking at the data I see that a username and the new password is being sent over, I attempted to change the username to the admin account that I found earlier in the profile seciton.
 
 <img width="538" alt="image" src="https://user-images.githubusercontent.com/66540055/193385708-5a04c579-28b4-4eb5-abee-bc63b24f49e7.png">
 
@@ -121,8 +121,8 @@ Testing this with SSH it proved to provide another foothold into the server!
 
 # Final... uh Final Thoughts
 
-This was a very cool room for me personally as I have never used MongoDB so researching the syntax to use was enlightening and humbling! 
+This was a neat room for me personally as I have never used MongoDB so researching the syntax to use was enlightening and goes to show there is something to be learned every minute of every day. 
 
-Looking forward to doing more CTF's, if you have any reccomendations please let me know!
+Looking forward to doing more CTF writeups, if you have any reccomendations please let me know!
 
 
